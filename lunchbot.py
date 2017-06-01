@@ -1,7 +1,7 @@
 from slacker import Slacker
-from boto.s3.connection import S3Connection
+import os
 
-key = S3Connection(os.environ['SLACK_API_KEY'])
+key = os.environ.get('SLACK_API_KEY', None)
 
 slack = Slacker(key)
 
