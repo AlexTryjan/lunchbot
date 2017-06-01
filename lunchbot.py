@@ -12,11 +12,11 @@ slack = Slacker(key)
 
 lunch_poll = 'React with your lunch choice, or else:\n' \
              ':one: Cass\n' \
-             '2. King\'s Cross\n' \
-             '3. %s\n' \
-             '4. Spit & Fire\n' \
-             '5. Mikey\'s\n' \
-             '6. Is Chopstick\'s really even open?' % (farm_names[randint(0,5)])
+             ':two: King\'s Cross\n' \
+             ':three: %s\n' \
+             ':four: Spit & Fire\n' \
+             ':five: Mikey\'s\n' \
+             ':six: Is Chopstick\'s really even open?' % (farm_names[randint(0,5)])
 
 # Send a message to #botsgonewild channel
 slack.chat.post_message('#botsgonewild', lunch_poll, as_user=True)
