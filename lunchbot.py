@@ -11,7 +11,7 @@ key = os.environ.get('SLACK_API_KEY', None)
 slack = Slacker(key)
 
 lunch_poll = 'React with your lunch choice, or else:\n' \
-             '1. Cass\n' \
+             ':one: Cass\n' \
              '2. King\'s Cross\n' \
              '3. %s\n' \
              '4. Spit & Fire\n' \
