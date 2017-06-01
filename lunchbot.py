@@ -17,6 +17,7 @@ lunch_poll = 'React with your lunch choice, or else:\n' \
              ':four: Spit & Fire\n' \
              ':five: Mikey\'s\n' \
              ':six: Is Chopstick\'s really even open?' % (farm_names[randint(0,5)])
+print(lunch_poll)
 
 # Send a message to #botsgonewild channel
-slack.chat.post_message('#botsgonewild', lunch_poll, as_user=True)
+slack.chat.post_message('#food', lunch_poll, as_user=True)
