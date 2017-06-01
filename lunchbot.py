@@ -18,4 +18,4 @@ lunch_poll = 'React with your lunch choice, or else:' \
              '6. Is Chopstick\'s really even open?' % (farm_names[0])
 
 # Send a message to #botsgonewild channel
-slack.chat.post_message('#botsgonewild', 'lunch_poll', as_user=True)
+slack.chat.post_message('#botsgonewild', lunch_poll, as_user=True)
