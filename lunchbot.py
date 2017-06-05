@@ -20,13 +20,13 @@ key = os.environ.get('SLACK_API_KEY', None)
 
 slack = Slacker(key)
 
-lunch_poll = 'React with your lunch choice, or else:\n' \
-             ':one: Cass\n' \
-             ':two: King\'s Cross\n' \
-             ':three: %s\n' \
-             ':four: Spit & Fire\n' \
-             ':five: Mikey\'s\n' \
-             ':six: Is Chopstick\'s really even open?' % (farm_names[randint(0,farm_index)])
+lunch_poll = 'React with your lunch choice emoji, or else:\n' \
+             ':peach: Cass\n' \
+             ':crossed_swords: King\'s Cross\n' \
+             ':sheeple: %s\n' \
+             ':fire: Spit & Fire\n' \
+             ':bread: Mikey\'s\n' \
+             ':sushi: Is Chopstick\'s really even open?' % (farm_names[randint(0,farm_index)])
 
 # Send a message to #botsgonewild channel
 slack.chat.post_message('#food', lunch_poll, as_user=True)
