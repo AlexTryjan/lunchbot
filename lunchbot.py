@@ -29,6 +29,6 @@ lunch_poll = 'React with your lunch choice emoji, or else:\n' \
              ':bread: Mikey\'s\n' \
              ':sushi: Is Chopstick\'s really even open?' % (farm_names[randint(0,farm_index)])
 
-if(datetime.datetime.today().weekday() == 5) :
+if(datetime.datetime.today().weekday() < 5) :
   # Send a message to #botsgonewild channel
   slack.chat.post_message('#botsgonewild', lunch_poll, as_user=True)
