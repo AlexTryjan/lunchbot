@@ -31,4 +31,4 @@ lunch_poll = 'React with your lunch choice emoji, or else:\n' \
 
 if(datetime.datetime.today().weekday() < 5) :
   # Send a message to #botsgonewild channel
-  slack.chat.post_message('#botsgonewild', lunch_poll, as_user=True)
+  slack.chat.post_message('#food', lunch_poll, as_user=True)
