@@ -13,7 +13,7 @@ farm_names = ['Farmers are friends, not food','Farm to fork',
               'Pirates of the Farm: Dead Farmers Tell No Tales',
               'Wake up sheeple, the cow bikes are just farm propaganda',
               'F-A-R-M','https://www.youtube.com/watch?v=RVJbKPW3Crs','George Orwell',
-              'Boycott the farm!']
+              'F A R M A G E D D O N','Boycott the farm!']
 
 farm_index = len(farm_names) - 1
 
@@ -23,11 +23,11 @@ slack = Slacker(key)
 
 lunch_poll = 'React with your lunch choice emoji, or else:\n' \
              ':peach: Cass\n' \
-             ':crossed_swords: King\'s Cross\n' \
-             ':sheeple: %s\n' \
-             ':fire: Spit & Fire\n' \
-             ':bread: Mikey\'s\n' \
-             ':sushi: Is Chopstick\'s really even open?' % (farm_names[randint(0,farm_index)])
+             ':crossed_swords: King\'s Cross'
+             #\n' \ ':sheeple: %s\n' \
+             #':fire: Spit & Fire\n' \
+             #':bread: Mikey\'s\n' \
+             #':sushi: Is Chopstick\'s really even open?' % (farm_names[randint(0,farm_index)])
 
 if(datetime.datetime.today().weekday() < 5) :
   # Send a message to #botsgonewild channel
