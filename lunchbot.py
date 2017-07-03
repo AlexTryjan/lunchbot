@@ -23,7 +23,8 @@ slack = Slacker(key)
 
 lunch_poll = 'React with your lunch choice emoji, or else:\n' \
              ':peach: Cass\n' \
-             ':crossed_swords: King\'s Cross'
+             ':crossed_swords: King\'s Cross\n' \
+             ':fire: Wait, there was work today?'
              #\n' \ ':sheeple: %s\n' \
              #':fire: Spit & Fire\n' \
              #':bread: Mikey\'s\n' \
