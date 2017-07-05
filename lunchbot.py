@@ -26,7 +26,7 @@ lunch_poll = 'React with your lunch choice emoji, or else:\n' \
              ':crossed_swords: King\'s Cross\n' \
              ':sheeple: %s\n' \
              ':fire: Spit & Fire\n' \
-             ':bread: Mikey\'s\n' \
+             ':bread: This chain called Mikey\'s\n' \
              ':sushi: Is Chopstick\'s really even open?' % (farm_names[randint(0,farm_index)])
 
 if(datetime.datetime.today().weekday() < 5) :
