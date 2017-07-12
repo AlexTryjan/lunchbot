@@ -24,11 +24,15 @@ slack = Slacker(key)
 lunch_poll = 'React with your lunch choice emoji, or else:\n' \
              ':peach: Cass\n' \
              ':crossed_swords: King\'s Cross\n' \
-             ':neal: %s\n' \
-             ':fire: Spit & Fire\n' \
+             #':neal: %s\n' \
+             #':fire: Spit & Fire\n' \
              ':bread: This chain called Mikey\'s\n' \
-             ':sushi: Is Chopstick\'s really even open?' % (farm_names[randint(0,farm_index)])
+             ':sushi: Is Chopstick\'s really even open?' \ #% (farm_names[randint(0,farm_index)])
+             
+b_day = 'Also, a big happy birthday to my dad/creator @zswanson \n' \
+        'Please respond w/ birthday messages!'
 
 if(datetime.datetime.today().weekday() < 5) :
   # Send a message to #botsgonewild channel
   slack.chat.post_message('#food', lunch_poll, as_user=True)
+  slack.chat.post_message('#food', b_day, as_user=True)
