@@ -27,7 +27,7 @@ lunch_poll = 'React with your lunch choice emoji, or else:\n' \
              ':sheeple: %s\n' \
              ':bread: This chain called Mikey\'s\n' \
              ':sushi: Is Chopstick\'s really even open?\n' \
-             ':fire: Spit & Fire\n'  % (farm_names[randint(0,farm_index)])
+             ':fire: Spit & Fire'  % (farm_names[randint(0,farm_index)])
 
 if(datetime.datetime.today().weekday() < 5) :
   # Send a message to #botsgonewild channel
