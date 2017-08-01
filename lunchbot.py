@@ -22,7 +22,7 @@ key = os.environ.get('SLACK_API_KEY', None)
 slack = Slacker(key)
 
 lunch_poll = 'React with your lunch choice emoji, or else:\n' \
-             ':sheeple: Taco Tuesday @ 11'
+             ':sheeple: Taco Tuesday @ 11:30'
 
 if(datetime.datetime.today().weekday() < 5) :
   # Send a message to #botsgonewild channel
