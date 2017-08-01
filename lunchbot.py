@@ -22,13 +22,16 @@ key = os.environ.get('SLACK_API_KEY', None)
 slack = Slacker(key)
 
 lunch_poll = 'React with your lunch choice emoji, or else:\n' \
-             ':peach: Cass\n' \
-             ':crossed_swords: King\'s Cross\n' \
-             ':sheeple: %s\n' \
-             ':bread: This chain called Mikey\'s\n' \
-             ':sushi: Is Chopstick\'s really even open?\n' \
-             ':fire: Spit & Fire'  % (farm_names[randint(0,farm_index)])
+             ':sheeple: Taco Tuesday @ 11'
 
 if(datetime.datetime.today().weekday() < 5) :
   # Send a message to #botsgonewild channel
   slack.chat.post_message('#food', lunch_poll, as_user=True)
+  
+#  lunch_poll = 'React with your lunch choice emoji, or else:\n' \
+#             ':peach: Cass\n' \
+#             ':crossed_swords: King\'s Cross\n' \
+#             ':sheeple: %s\n' \
+#             ':bread: This chain called Mikey\'s\n' \
+#             ':sushi: Is Chopstick\'s really even open?\n' \
+#             ':fire: Spit & Fire'  % (farm_names[randint(0,farm_index)])
